@@ -1,0 +1,22 @@
+body {
+  position: relative;
+}
+.js-no-scroll {
+  overflow: hidden;
+}
+.main-container {
+  max-width: 1182px;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+  position: relative;
+}
+.main-container_small {
+  max-width: 942px;
+}
+.main-container_numbers {
+  max-width: 900px;
+}
+.video-container {
+  max-width: 1330px;
+}

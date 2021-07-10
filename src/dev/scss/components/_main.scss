@@ -1,0 +1,44 @@
+.main {
+  background: $main-bg url("../images/main-bg-cover.png") center no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  padding: 20px;
+  position: relative;
+  color: #fff;
+  &::before {
+    display: block;
+    bottom: -480px;
+    left: -324px;
+    transform: rotate(17deg);
+    content: "";
+    position: absolute;
+    z-index: 3;
+    width: 100%;
+    height: 70%;
+    background: #fff;
+  }
+  &::after {
+    display: block;
+    bottom: -480px;
+    right: -324px;
+    transform: rotate(-17deg);
+    position: absolute;
+    background: #fff;
+    z-index: 3;
+    width: 100%;
+    height: 70%;
+    content: "";
+  }
+}
+
+@media (max-width: 992px) {
+  .main {
+    background: #6049cf;
+    &::after {
+      display: none;
+    }
+    &::before {
+      display: none;
+    }
+  }
+}

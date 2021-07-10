@@ -1,0 +1,24 @@
+//--common--//
+@import "./common/scss-variables";
+@import "./common/reset";
+@import "./common/fonts";
+@import "./common/typography.scss";
+@import "./common/general";
+@import "./partials/swiper.scss";
+
+//--partials--//
+@import "./partials/btn";
+
+//--components--//
+@import "./components/header";
+@import "./components/footer";
+
+//--main--//
+@import "./components/main";
+@import "./components/slider";
+@import "./components/more";
+@import "./components/numbers";
+@import "./components/features";
+@import "./components/feature-video";
+@import "./components/cta";
+@import "./components/copyright";

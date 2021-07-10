@@ -1,0 +1,30 @@
+.copyright-section {
+  background-color: #252525;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__text {
+    color: #9b9b9b;
+    font-family: "Raleway";
+    font-size: 10px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+  }
+  &__img {
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+}
+
+@media (max-width: 576px) {
+  .copyright-section {
+    &__text {
+      font-size: 6px;
+    }
+  }
+}

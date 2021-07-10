@@ -1,0 +1,36 @@
+.cta {
+  background: $main-bg url("../images/cta-bg.png") center no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  padding-top: 85px;
+  padding-bottom: 74px;
+  &-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__title {
+      color: #ffffff;
+      font-size: 40px;
+      font-weight: 700;
+      line-height: 18px;
+    }
+    &__button {
+      width: 171px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .cta {
+    padding-top: 42px;
+    padding-bottom: 36px;
+    &-section {
+      flex-direction: column;
+      &__title {
+        font-size: 30px;
+        text-align: center;
+        margin-bottom: 40px;
+      }
+    }
+  }
+}

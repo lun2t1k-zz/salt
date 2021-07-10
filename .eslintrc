@@ -1,0 +1,29 @@
+{
+  "extends": "standard",
+  "env": {
+    "browser": true,
+    "mocha": true,
+    "es6": true,
+    "node": false
+  },
+  "globals": {
+    "document": true,
+    "window": true,
+    "bodymovin": true,
+    "Vue": true
+  },
+  "rules": {
+    "no-new": 0,
+    "semi": [2, "always"],
+    "space-before-function-paren": 0,
+    "indent": 0,
+    "no-useless-escape": 0,
+    "property-sort-order": 0,
+    "no-undef": 0,
+    "padded-blocks": 0,
+    "no-trailing-spaces": 0,
+    "eol-last": 0,
+    "no-unused-vars": 0,
+    "no-multiple-empty-lines": 0
+  }
+}

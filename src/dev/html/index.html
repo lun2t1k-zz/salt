@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  @@include('./components/_head.html')
+<body>
+  @@include('./components/_header.html')
+  @@include('./components/_slider.html')
+  @@include('./components/_more.html')
+  @@include('./components/_numbers.html')
+  @@include('./components/_features.html')
+  @@include('./components/_feature-video.html')
+  @@include('./components/_cta.html')
+  @@include('./components/_footer.html')
+  @@include('./components/_copyright.html')
+
+  <script src="./scripts/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
+  <script type="module">
+    import Fancybox from "https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.esm.js";
+  </script>
+  <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $("a").on('click', function (event) {
+
+        if (this.hash !== "") {
+          event.preventDefault();
+
+          var hash = this.hash;
+
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 1200, function () {
+
+            window.location.hash = hash;
+          });
+        }
+      });
+    });
+  </script>
+</body>
+</html>

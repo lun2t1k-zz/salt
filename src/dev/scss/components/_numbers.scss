@@ -1,0 +1,43 @@
+.numbers {
+  padding-top: 160px;
+  padding-bottom: 134px;
+  &-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+  &-block {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    &__count {
+      color: $main-bg;
+      font-size: 60px;
+      font-weight: 700;
+      line-height: 18px;
+      margin-bottom: 36px;
+    }
+    &__descr {
+      width: 250px;
+      color: $main-bg;
+      font-size: 15px;
+      font-weight: 700;
+      line-height: 20px;
+      text-transform: uppercase;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .numbers {
+    padding-top: 80px;
+    padding-bottom: 27px;
+    &-wrapper {
+      flex-direction: column;
+    }
+    &-block {
+      margin-bottom: 40px;
+    }
+  }
+}
