@@ -1,6 +1,6 @@
 .footer {
   background-color: #363636;
-  padding-top: 56px;
+  padding-top: 55px;
   padding-bottom: 48px;
   &::after {
     content: "";
@@ -11,6 +11,19 @@
     height: 86px;
     background: url("../images/footer-logo.png") center no-repeat;
   }
+  .twitter-widget {
+    padding-top: 3px;
+    &::before {
+      position: absolute;
+      content: "";
+      top: 3px;
+      left: 15px;
+      width: 300px;
+      height: 60px;
+      background: url("../images/twitter-header.png") center no-repeat;
+      border-radius: 5px;
+    }
+  }
   &-section {
     display: flex;
     justify-content: space-between;
@@ -18,7 +31,7 @@
       display: flex;
       align-items: center;
       justify-content: start;
-      margin-bottom: 10px;
+      margin-bottom: 12px;
       &_img {
         margin-right: 7px;
       }
@@ -27,9 +40,13 @@
         font-size: 14px;
         font-weight: 700;
         line-height: normal;
+        letter-spacing: 1px;
         text-align: left;
         text-transform: uppercase;
       }
+    }
+    &__nav {
+      margin-right: 50px;
     }
     &__link {
       color: #ffffff;
@@ -50,11 +67,11 @@
           font-size: 14px;
           font-weight: 400;
           line-height: 28px;
-          margin-right: 10px;
+          margin-right: 8px;
         }
         &__link {
           color: #ffffff;
-          font-size: 14px;
+          font-size: 13px;
           font-weight: 400;
           line-height: 24px;
           letter-spacing: 0.7px;
@@ -84,5 +101,15 @@
 @media (max-width: 576px) {
   .footer {
     padding-bottom: 135px;
+  }
+}
+
+@media (max-width: 330px) {
+  .footer {
+    .twitter-widget {
+      &::before {
+        width: 91%;
+      }
+    }
   }
 }

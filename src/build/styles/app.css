@@ -387,6 +387,8 @@ body {
 
 .video-container {
   max-width: 1330px;
+  padding: 0;
+  padding-left: 25px;
 }
 
 @font-face {
@@ -644,7 +646,7 @@ body {
 
 .header-content .navbar .nav .menu__item {
   border-bottom: 3px solid transparent;
-  margin-left: 15px;
+  margin-left: 17px;
   margin-top: 20px;
   padding-bottom: 2px;
 }
@@ -666,7 +668,7 @@ body {
 .footer {
   background-color: #363636;
   padding-bottom: 48px;
-  padding-top: 56px;
+  padding-top: 55px;
 }
 
 .footer::after {
@@ -677,6 +679,21 @@ body {
   position: absolute;
   right: 33px;
   width: 75px;
+}
+
+.footer .twitter-widget {
+  padding-top: 3px;
+}
+
+.footer .twitter-widget::before {
+  background: url("../images/twitter-header.png") center no-repeat;
+  border-radius: 5px;
+  content: "";
+  height: 60px;
+  left: 15px;
+  position: absolute;
+  top: 3px;
+  width: 300px;
 }
 
 .footer-section {
@@ -698,7 +715,7 @@ body {
   display: -ms-flexbox;
   display: flex;
   justify-content: start;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
 }
 
 .footer-section__title_img {
@@ -709,9 +726,14 @@ body {
   color: #ff8b00;
   font-size: 14px;
   font-weight: 700;
+  letter-spacing: 1px;
   line-height: normal;
   text-align: left;
   text-transform: uppercase;
+}
+
+.footer-section__nav {
+  margin-right: 50px;
 }
 
 .footer-section__link {
@@ -733,12 +755,12 @@ body {
   font-size: 14px;
   font-weight: 400;
   line-height: 28px;
-  margin-right: 10px;
+  margin-right: 8px;
 }
 
 .footer-section__links .contacts__link {
   color: #ffffff;
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 400;
   letter-spacing: 0.7px;
   line-height: 24px;
@@ -844,6 +866,8 @@ body {
 
 .slider__img {
   height: 121px;
+  margin-bottom: 33px;
+  margin-right: 70px;
   width: 149px;
 }
 
@@ -927,7 +951,7 @@ body {
 
 .features {
   background-color: #f8f8f8;
-  padding-bottom: 30px;
+  padding-bottom: 54px;
   padding-top: 168px;
 }
 
@@ -974,29 +998,34 @@ body {
   flex-direction: column;
   height: auto;
   justify-content: start;
-  margin-bottom: 62px;
-  width: 285px;
+  margin-bottom: 50px;
+  padding-left: 8px;
+  width: 293px;
 }
 
 .features-block__img {
-  -ms-flex-align: center;
+  -ms-flex-align: end;
   -ms-flex-pack: center;
-  -webkit-box-align: center;
+  -webkit-box-align: end;
   -webkit-box-pack: center;
-  align-items: center;
+  align-items: flex-end;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   height: 150px;
   justify-content: center;
   margin-bottom: 28px;
-  text-align: center;
+}
+
+.features-block__img_shifted {
+  padding-right: 55px;
 }
 
 .features-block__title {
   color: #7050e5;
-  font-size: 17px;
+  font-size: 16px;
   font-weight: 700;
+  letter-spacing: 1px;
   line-height: 16px;
   margin-bottom: 5px;
   text-align: left;
@@ -1012,16 +1041,16 @@ body {
 }
 
 .feature-video {
-  padding-bottom: 120px;
+  padding-bottom: 119px;
   padding-top: 106px;
 }
 
 .feature-video__wrapper {
-  -ms-flex-align: center;
+  -ms-flex-align: start;
   -ms-flex-pack: justify;
-  -webkit-box-align: center;
+  -webkit-box-align: start;
   -webkit-box-pack: justify;
-  align-items: center;
+  align-items: flex-start;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1036,6 +1065,7 @@ body {
   display: -ms-flexbox;
   display: flex;
   flex-direction: column;
+  padding-top: 111px;
 }
 
 .feature-video__title {
@@ -1109,8 +1139,8 @@ body {
   background: #7050e5 url("../images/cta-bg.png") center no-repeat;
   background-size: cover;
   overflow: hidden;
-  padding-bottom: 74px;
-  padding-top: 85px;
+  padding-bottom: 70px;
+  padding-top: 77px;
 }
 
 .cta-section {
@@ -1133,6 +1163,7 @@ body {
 }
 
 .cta-section__button {
+  margin-top: 10px;
   width: 171px;
 }
 
@@ -1430,6 +1461,12 @@ body {
 
   .copyright-section__text {
     font-size: 6px;
+  }
+}
+
+@media (max-width: 330px) {
+  .footer .twitter-widget::before {
+    width: 91%;
   }
 }
 /*# sourceMappingURL=app.css.map */

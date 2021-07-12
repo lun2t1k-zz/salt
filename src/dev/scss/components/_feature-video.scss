@@ -1,14 +1,15 @@
 .feature-video {
   padding-top: 106px;
-  padding-bottom: 120px;
+  padding-bottom: 119px;
   &__wrapper {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
   }
   &__text {
     display: flex;
     flex-direction: column;
+    padding-top: 111px;
   }
   &__title {
     color: $main-bg;

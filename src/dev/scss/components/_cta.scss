@@ -2,8 +2,8 @@
   background: $main-bg url("../images/cta-bg.png") center no-repeat;
   background-size: cover;
   overflow: hidden;
-  padding-top: 85px;
-  padding-bottom: 74px;
+  padding-top: 77px;
+  padding-bottom: 70px;
   &-section {
     display: flex;
     justify-content: space-between;
@@ -16,6 +16,7 @@
     }
     &__button {
       width: 171px;
+      margin-top: 10px;
     }
   }
 }
